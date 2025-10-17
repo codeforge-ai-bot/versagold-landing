@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VersaGold — Beautiful Landing</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    /* Minimal reset */
+    *,*::before,*::after{box-sizing:border-box}
+    html,body{margin:0;height:100%;font-family:'Poppins', system-ui, -apple-system, Arial}
+    a{text-decoration:none;color:inherit}
+  </style>
+</head>
+<body>
+  <!-- Decorative gradient background -->
+  <div class="bg-gradient" aria-hidden="true"></div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo" aria-label="VersaGold Logo" title="VersaGold">
+        <!-- simple SVG logo -->
+        <svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+              <stop stop-color="#7C3AED"/>
+              <stop offset="1" stop-color="#06B6D4"/>
+            </linearGradient>
+          </defs>
+          <circle cx="50" cy="50" r="40" fill="url(#g)"/>
+          <path d="M35 50h30" stroke="white" stroke-width="8" stroke-linecap="round"/>
+          <path d="M50 35v30" stroke="white" stroke-width="8" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container" id="top">
+      <div class="hero-copy">
+        <h1 class="gradient-title"> VersaGold Landing </h1>
+        <p class="sub">Beautiful, fast, and expressive landing pages built with modern UI patterns. Crafted to impress and convert.</p>
+        <div class="cta-row">
+          <a href="#features" class="btn btn-primary">Explore Features</a>
+          <a href="#contact" class="btn btn-light">Get in touch</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Decorative glass card">
+        <div class="card glass" role="img" aria-label="Preview card">
+          <div class="card-header">Hello</div>
+          <div class="card-body">This is a live preview of VersaGold’s stunning UI.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="features container">
+      <h2 class="section-title">Beautiful by design, fast by code</h2>
+      <div class="grid">
+        <div class="feature">
+          <div class="icon">🎨</div>
+          <h3>Gradient Systems</h3>
+          <p>Vibrant color blends and glassy surfaces for a premium feel.</p>
+        </div>
+        <div class="feature">
+          <div class="icon">⚡</div>
+          <h3>Performance First</h3>
+          <p>Lightweight markup with crisp visuals and fast load.</p>
+        </div>
+        <div class="feature">
+          <div class="icon">🧭</div>
+          <h3>Responsive & Accessible</h3>
+          <p>Mobile-friendly, keyboard navigable, and accessible by default.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="pricing container">
+      <h2 class="section-title">Pricing</h2>
+      <div class="pricing-grid">
+        <div class="price-card">
+          <div class="price">Free</div>
+          <p>Starter plan for personal projects.</p>
+          <a class="btn" href="#contact">Choose</a>
+        </div>
+        <div class="price-card popular">
+          <div class="price">Pro</div>
+          <p>Advanced components and templates.</p>
+          <a class="btn" href="#contact">Choose</a>
+        </div>
+        <div class="price-card">
+          <div class="price">Team</div>
+          <p>Collaboration features for teams.</p>
+          <a class="btn" href="#contact">Choose</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact container">
+      <h2 class="section-title">Let’s build something beautiful</h2>
+      <form class="newsletter" onsubmit="return false">
+        <input aria-label="Email" placeholder="Your email" />
+        <button class="btn btn-primary" type="submit">Notify me</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer container" id="footer">
+    <p>© VersaGold. Made with care.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
